@@ -1,0 +1,22 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #495e57;;
+  }
+  
+  .about-content {
+    text-align: left;
+    color: white;
+  }
+  
+  .food-image {
+    align-items: right;
+    width: 300px; 
+    height: auto;
+  }
+  
+  h1 {
+    color: yellow;
+  }
+  

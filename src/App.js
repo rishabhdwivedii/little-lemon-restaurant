@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Menu from './components/Menu';
+import Testimonial from './components/Testimonial';
+import Intro from './components/Intro';
+import Reservation from './components/Reservation';
+import Footer from './components/Footer';
 
 function App() {
+  const [isReservationOpen, setIsReservationOpen] = useState(false);
+
+  const handleReservationClick = () => {
+    setIsReservationOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsReservationOpen(false);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Intro />
+      <Menu />
+      <Testimonial />
+      <button onClick={handleReservationClick}>Reserve a Table</button>
+
+      {isReservationOpen && <Reservation onClose={handleModalClose} />}
+      <About />
+      <Footer />
+    </>
   );
 }
 
