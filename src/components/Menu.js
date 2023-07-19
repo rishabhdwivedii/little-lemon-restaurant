@@ -1,3 +1,4 @@
+import React from 'react';
 import './Menu.css';
 import dish1Image from '../assets/dish1.jpg';
 import dish2Image from '../assets/dish2.jpg';
@@ -27,21 +28,24 @@ function Menu() {
 
   return (
     <div className='menu-cont'>
-    <h2>This Week's Special</h2>
-    <div className="menu-container">
-      {dishes.map((dish, index) => (
-        <div className="card" key={index}>
-          <img src={dish.image} alt={dish.name} className="dish-image" />
-          <div className="dish-details">
-            <h2 className="dish-name">{dish.name}</h2>
-            <p className="dish-description">{dish.description}</p>
-            <p className="dish-price">{dish.price}</p>
+      <h2>This Week's Special</h2>
+      <div className="menu-container">
+        {dishes.map((dish, index) => (
+          <div className="card" key={index}>
+            <img src={dish.image} alt={dish.name} className="dish-image" />
+            <div className="dish-details">
+              <h2 className="dish-name">{dish.name}</h2>
+              <p className="dish-description">{dish.description}</p>
+              <p className="dish-price">
+                {dish.price}
+                <span className="add-to-cart">&#128722;</span>
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
 export default Menu;

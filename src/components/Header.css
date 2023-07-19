@@ -1,20 +1,21 @@
+/* Header.css */
 .header {
   display: grid;
-  grid-template-columns: auto 1fr; /* Logo takes auto width, Nav takes remaining width */
-  gap: 20px; /* Gap between logo and nav items */
-  align-items: center; /* Vertically center items */
-  padding: 0 20px; /* Add margins on each side of the header */
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px;
   background-color: #f0f0f0;
 }
 
 .logo {
   width: 100%;
-  max-width: 200px; /* Adjust the logo's max width as needed */
-  height: auto; /* Preserve aspect ratio */
+  max-width: 200px;
+  height: auto;
 }
 
 nav {
-  justify-self: end; /* Align the nav items to the right */
+  justify-self: end;
 }
 
 ul {
@@ -25,5 +26,5 @@ ul {
 }
 
 li {
-  margin-left: 20px; /* Add spacing between nav items */
+  margin-left: 20px;
 }

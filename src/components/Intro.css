@@ -1,30 +1,46 @@
+/* intro.css */
 .intro-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #495e57;
-    padding: 6%;
-  }
-  
-  .intro-content {
-    text-align: left;
-    color: yellow;
-    font-family: Markazi Text,serif;
-  }
-  
-  .food-image {
-    align-items: right;
-    width: 30%; 
-    height: auto;
-  }
-  
-  .button-table {
-    padding: 20px;
-    border-radius: 8%;
-    font-family: Markazi Text,serif;
-    font-style: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout for larger screens */
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #495e57;
+  padding: 6%;
+}
+
+.intro-content {
+  text-align: left;
+  color: yellow;
+  font-family: Markazi Text, serif;
+}
+
+.food-image {
+  width: 100%;
+  max-width: 300px; /* Adjust the max-width as needed */
+  height: auto;
+  border-radius: 10%;
+}
+
+.button-table {
+  padding: 20px;
+  border-radius: 8%;
+  font-family: Markazi Text, serif;
+  font-style: bold;
+}
+
+.color-white {
+  color: white;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .intro-container {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens (e.g., mobile devices) */
+    padding: 20px; /* Adjust the padding for mobile view */
   }
 
-  .color-white {
-    color: white;
+  .food-image {
+    margin: 0 auto; /* Center the food image on mobile */
   }
+}

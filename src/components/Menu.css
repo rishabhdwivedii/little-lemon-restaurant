@@ -1,43 +1,86 @@
+/* Menu.css */
+.menu-cont {
+  padding: 6%;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Markazi Text', serif;
+  font-weight: bold;
+  color: #495e57;
+  margin-bottom: 20px;
+}
+
 .menu-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dish-image {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dish-details {
+  margin-top: 10px;
+}
+
+.dish-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #495e57;
+}
+
+.dish-description {
+  margin-top: 5px;
+  color: #777;
+}
+
+.dish-price {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.add-to-cart {
+  margin-left: 5px;
+  font-size: 18px;
+  color: #495e57;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens (e.g., mobile devices) */
   }
-  
+
   .card {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
+    padding: 10px; /* Adjust padding for mobile view */
   }
-  
-  .dish-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .dish-details {
-    margin-top: 10px;
-  }
-  
-  .dish-name {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .dish-description {
-    margin-top: 5px;
-    color: #777;
-  }
-  
+
   .dish-price {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
+    font-size: 14px; /* Adjust the font size of the dish price for mobile view */
   }
-  
-  menu-cont {
-    padding: 6%;
+
+  .add-to-cart {
+    font-size: 16px; /* Adjust the cart icon size for mobile view */
   }
+}
