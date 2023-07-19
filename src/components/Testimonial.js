@@ -29,6 +29,8 @@ function Testimonial() {
   ];
 
   return (
+    <div className='test-container'>
+    <h2 className='heading'>Testimonials</h2>
     <div className="testimonial-container">
       {testimonials.map((testimonial, index) => (
         <div className="card" key={index}>
@@ -36,6 +38,7 @@ function Testimonial() {
           <p className="customer-review">{testimonial.review}</p>
         </div>
       ))}
+    </div>
     </div>
   );
 };

@@ -1,18 +1,30 @@
 .intro-container {
     display: flex;
     align-items: center;
-    justify-content: left;
-    background-color: #495e57;;
+    justify-content: center;
+    background-color: #495e57;
+    padding: 6%;
   }
   
   .intro-content {
     text-align: left;
+    color: yellow;
+    font-family: Markazi Text,serif;
   }
   
   .food-image {
     align-items: right;
-    width: 300px; 
+    width: 30%; 
     height: auto;
   }
   
-  
+  .button-table {
+    padding: 20px;
+    border-radius: 8%;
+    font-family: Markazi Text,serif;
+    font-style: bold;
+  }
+
+  .color-white {
+    color: white;
+  }

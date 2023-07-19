@@ -20,6 +20,17 @@
   
   .customer-review {
     margin-top: 10px;
-    color: #333;
+    color: yellow;
+    font-style: italic;
   }
   
+  .test-container {
+    padding: 7%;
+    background-color: #495e57;
+  }
+
+  .heading {
+    color: yellow;
+    padding-left: 40%;
+    padding-bottom: 5%;
+  }
