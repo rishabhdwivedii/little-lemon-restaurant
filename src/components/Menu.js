@@ -7,20 +7,20 @@ import dish3Image from '../assets/dish3.jpg';
 function Menu() {
   const dishes = [
     {
-      name: 'Dish 1',
-      description: 'Description of Dish 1',
+      name: 'Greek Salad',
+      description: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.',
       price: '$10',
       image: dish1Image,
     },
     {
-      name: 'Dish 2',
-      description: 'Description of Dish 2',
+      name: 'Bruschetta',
+      description: 'Our Bruschetta is made from homemade grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Topped with fresh vegetables.',
       price: '$12',
       image: dish2Image,
     },
     {
-      name: 'Dish 3',
-      description: 'Description of Dish 3',
+      name: 'Lemon Cake',
+      description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined. ',
       price: '$8',
       image: dish3Image,
     },

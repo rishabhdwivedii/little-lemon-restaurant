@@ -8,22 +8,22 @@ function Testimonial() {
   const testimonials = [
     {
       name: 'Customer 1',
-      review: 'Review from Customer 1',
+      review: '"Really enjoyed the atmosphere."',
       image: customer1Image,
     },
     {
       name: 'Customer 2',
-      review: 'Review from Customer 2',
+      review: '"The greek salad was excellent!"',
       image: customer2Image,
     },
     {
       name: 'Customer 3',
-      review: 'Review from Customer 3',
+      review: '"You have to try the Greek Salad!"',
       image: customer3Image,
     },
     {
       name: 'Customer 4',
-      review: 'Review from Customer 4',
+      review: '"Awesome place peaceful atmosphere with delicious food"',
       image: customer4Image,
     },
   ];
