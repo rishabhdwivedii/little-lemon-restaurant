@@ -31,9 +31,9 @@ h2 {
 }
 
 .dish-image {
-  width: auto;
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
+  height: 200px; /* Set a fixed height for the dish images */
+  object-fit: cover; /* Maintain aspect ratio and make the images responsive */
   border-radius: 8px;
 }
 

@@ -1,17 +1,19 @@
+/* About.css */
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 6%;
-  }
-  
-  .about-content {
-    text-align: left;
-    color: black;
-  }
-  
-  .food-image {
-    align-items: right;
-    width: 30%; 
-    height: auto;
-  }
+  display: flex;
+  flex-direction: column; /* Stack the content in a column on mobile devices */
+  align-items: center;
+  padding: 6%;
+}
+
+.about-content {
+  text-align: center; /* Center the text content in the container */
+  color: black;
+}
+
+.food-image {
+  width: 100%; /* Make the image take the full width of the container */
+  max-width: 300px; /* Limit the maximum width of the image */
+  height: auto;
+  margin-top: 20px; /* Add spacing between the text content and the image */
+}

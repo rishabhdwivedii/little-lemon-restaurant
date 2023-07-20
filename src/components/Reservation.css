@@ -1,37 +1,58 @@
+/* reservation.css */
 .reservation-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: #495e57;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+  color: #333; /* Set text color to be easily readable */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px; /* Increase the font size for a bigger close button */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff; /* Set text color of the close button to white for better visibility */
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
   .reservation-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    background-color: #495e57;
+    width: 80%;
+    max-width: 400px;
   }
-  
-  label,
-  input,
-  button {
-    display: block;
-    margin-bottom: 10px;
-    background-color: yellow;
-  }
+
   .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
     font-size: 18px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  }
+}
+  .headingg {
+    color: white;
   }

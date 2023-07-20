@@ -11,10 +11,10 @@ const Header = () => {
       <nav>
         <ul>
           <li>Home</li>
-          <li>About</li>
           <li>Menu</li>
           <li>Reservation</li>
-          <li>Order Online</li>
+          <li>About</li>
+          <li>Contact Us</li>
         </ul>
       </nav>
     </header>

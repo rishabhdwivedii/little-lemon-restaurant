@@ -18,7 +18,7 @@ const Reservation = ({ onClose }) => {
       <button className="close-button" onClick={onClose}>
           &times;
         </button>
-        <h2>Reserve a Table</h2>
+        <h2 className='headingg'>Reserve a Table</h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
           <input
@@ -56,7 +56,7 @@ const Reservation = ({ onClose }) => {
             required
           />
 
-          <button type="submit">Submit</button>
+          <button type="submit">Reserve</button>
         </form>
       </div>
     </div>
