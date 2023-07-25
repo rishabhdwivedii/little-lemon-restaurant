@@ -27,8 +27,9 @@ function Menu() {
   ];
 
   return (
+    <div className='menu'>
     <div className='menu-cont'>
-      <h2>This Week's Special</h2>
+      <h2 className='menu-heading'>This Week's Special</h2>
       <div className="menu-container">
         {dishes.map((dish, index) => (
           <div className="card" key={index}>
@@ -44,6 +45,7 @@ function Menu() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

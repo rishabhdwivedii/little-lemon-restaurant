@@ -14,10 +14,11 @@ function Intro() {
     setIsReservationOpen(false);
   };
     return (
+      <div className='intro'>
       <div className="intro-container">
         <div className="intro-content">
           <h1>Little Lemon</h1>
-          <div className='color-white'>
+          <div className="color-white">
           <h2>Chicago</h2>
           <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
           </div>
@@ -26,6 +27,7 @@ function Intro() {
       {isReservationOpen && <Reservation onClose={handleModalClose} />}
         </div>
         <img src={foodImage} alt="Food" className="food-image" />
+      </div>
       </div>
            );
     };
