@@ -35,6 +35,11 @@ li {
     display: none;
   }
 
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
   /* Styles for the burger icon and close button */
   .burger-icon,
   .close-button {
